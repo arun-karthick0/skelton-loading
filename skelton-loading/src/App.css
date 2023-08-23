@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+  background-color: rgb(43, 43, 43);
+}
+.App {
+  text-align: center;
+  width: 95%;
+  max-width: 800px;
+  margin: 6rem auto 0;
+}
+
+.user-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+}
+
+.user-card {
+  display: flex;
+  padding: 0.5rem;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 5px;
+  cursor: pointer;
+  color: #949494;
+  transition: all 0.25s ease;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-top: 15%;
+}
+
+.info {
+  text-align: left;
+  margin-left: 1rem;
+}
+
+.info h3,
+.info p {
+  margin-bottom: 0.5rem;
+}
+
+.user-post {
+  max-width: 500px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.user-post h2 {
+  margin: 1rem auto;
+  color: #949494;
+}
+
+.user-post a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #747474;
+}
+.user-post a:hover {
+  color: #5dd4ac;
+}
+
+.skelton_content {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 0.5px;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+.skelton_content .left-col {
+  margin: 30px 5px;
+}
+
+.skelton_content .right-col {
+  flex: 1;
+}
+
+@media (max-width: 600px) {
+  .user-container {
+    grid-template-columns: 1fr;
+  }
+}
